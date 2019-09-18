@@ -28,6 +28,14 @@ Stack type		ZigBee 3.0 Security
 CLI	list		Core / Application (full)
 
 
+#### 使用方法
+
+1. 建立网络的CLI指令
+	plugin network-creator form 1 0x1234 3 12
+	
+2. 打开入网许可的CLI指令
+	plugin network-creator-security open-network
+
 
 #### 问题提交及讨论
 
