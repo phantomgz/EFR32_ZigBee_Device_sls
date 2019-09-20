@@ -22,3 +22,9 @@ bug fix:
 #define EMBER_AF_API_ZLL_PROFILE "../../../protocol/zigbee/app/framework/plugin/zll-commissioning-common/zll-commissioning.h"
 
 
+
+#### UPDATE LOG
+1.1 
+	增加按键0，1插件，支持长按及短按，Button0的回调函数还支持 打印调试信息
+	
+	
