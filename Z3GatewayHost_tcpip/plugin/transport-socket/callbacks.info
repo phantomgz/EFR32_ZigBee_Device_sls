@@ -1,0 +1,30 @@
+#include PLATFORM_HEADER
+#include CONFIGURATION_HEADER
+#include EMBER_AF_API_TRANSPORT_SOCKET
+
+/** @brief Socket state is changed.
+ *
+ * @param state Contains the new and current EmberAfPluginTransportSocketState
+ * state.
+ */
+void emberAfPluginTransportSocketStateChangedCallback(EmberAfPluginTransportSocketState state)
+{
+}
+
+/** @brief Socket message arrived.
+ *
+ * This function is called when the socket client for the gateway receives
+ * an incoming message on a topic. If the message is processed by the application,
+ * return true. If the message is not processed, return false. This
+ * function is called on a separate thread, so no stack calls should be made
+ * within the implementation of this function. Instead, use a global variable in
+ * that function to communicate the message arrival to a stack event or timer
+ * running from the main loop.
+ *
+ * @param payload A string containing the payload for the message that arrived.
+ */
+bool emberAfPluginTransportSocketMessageArrivedCallback(const char* payload)
+{
+  // Return true, this tells the Socket client we have handled the incoming message
+  return true;
+}
